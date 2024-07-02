@@ -46,8 +46,8 @@ export default function Page() {
       </marquee>
       <form
         action={handleSubmit}
+        style={{ color: "black" }}
         className="flex flex-col w-60 m-auto text-black"
-        style={{ color: "blue" }}
       >
         <input name="title" placeholder="title"></input>
         <input name="img_url" placeholder="img_url"></input>
@@ -57,8 +57,12 @@ export default function Page() {
         <input name="score" placeholder="score"></input>
         <input name="platform" placeholder=" platform"></input>
         <input name="developer" placeholder=" developer"></input>
-        <button type="submit" className="m-8">
-          Submit!
+        <button
+          type="submit"
+          className="m-8 border-solid border-2 border-orange-700 hover:border-rose-600"
+          style={{ color: "tomato" }}
+        >
+          _submit
         </button>
       </form>
     </div>
