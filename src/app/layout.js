@@ -14,10 +14,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      {/* bg-hero and bg-vDark-grey are defined in the tailwind config - custom themes. */}
-      <body className={`${gothicA1.className} bg-hero bg-vDark-grey`}>
-        <NavigationBar />
         <div className="max-w-screen-lg">{children}</div>
       </body>
     </html>
